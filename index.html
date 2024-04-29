@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarefa Bootstrap</title>
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <style>
+        h1 {
+            padding: 16px;
+        }
+
+        .card-img-overlay {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Carrossel de imagens</h1>
+        <div id="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div data-bs-interval="3000" class="carousel-item active">
+                    <img class="d-block w-100" src="/imagens/birds-2378923_1280.jpg" />
+                    <div class="carousel-caption">
+                        <h2>Foto de um pássaro</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100" src="./imagens/duck-meet-4127713_1280.jpg" />
+                    <div class="carousel-caption">
+                        <h2>Foto de patos de borracha</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100" src="./imagens/monkey-8704855_1280.jpg" />
+                    <div class="carousel-caption">
+                        <h2>Foto de um macaco no galho</h2>
+                    </div>
+                </div>
+            </div>
+            <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next" type="button">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h1>Cidades</h1>
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <article class="card">
+                    <header class="card-header">
+                        Seattle
+                    </header>
+                    <img src="/imagens/seattle-6093144_1280.jpg" />
+                    <div class="card-body">
+                        <h4 class="card-title">A cidade do grunge</h4>
+                        <p class="card-text">
+                            Conheça mais sobre a cidade multicultural do Noroeste dos EUA.
+                        </p>
+                        <a href="#" class="btn btn-primary">Leia mais</a>
+                    </div>
+                    <footer class="card-footer">
+                        Postado em <time>24/04/2024 às 11:30:00</time>
+                    </footer>
+                </article>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <article class="card">
+                    <header class="card-header">
+                        Montreal
+                    </header>
+                    <img src="/imagens/downtown-4730166_1280.jpg" />
+                    <div class="card-body">
+                        <h4 class="card-title">A parte francófona do Canadá</h4>
+                        <p class="card-text">
+                            Conheça um pouco mais sobre Montreal, a cidade bilíngue do Canadá.
+                        </p>
+                        <a href="#" class="btn btn-primary">Leia mais</a>
+                    </div>
+                    <footer class="card-footer">
+                        Postado em <time>24/04/2024 às 11:30:00</time>
+                    </footer>
+                </article>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <article class="card">
+                    <header class="card-header">
+                        Toronto
+                    </header>
+                    <img src="/imagens/architecture-7139263_1280.jpg" />
+                    <div class="card-body">
+                        <h4 class="card-title">Toronto, o centro do Canadá</h4>
+                        <p class="card-text">
+                            Conheça mais sobre a maior cidade do território canadense.
+                        </p>
+                        <a href="#" class="btn btn-primary">Leia mais</a>
+                    </div>
+                    <footer class="card-footer">
+                        Postado em <time>24/04/2024 às 11:30:00</time>
+                    </footer>
+                </article>
+            </div>
+        </div>
+    </div>
+    <script src="lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
